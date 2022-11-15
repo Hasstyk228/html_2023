@@ -1,0 +1,13 @@
+ul li {
+    display: inline-block;
+}
+li{
+    padding-left: 5%;
+    
+}
+nav{
+    text-align: center;
+    background-color: rgb(210, 240, 78);
+}
+
+

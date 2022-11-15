@@ -1,0 +1,16 @@
+
+div{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+    margin: 25px;
+    border: 5px #000000 solid;
+    padding: 10px 20px 15px 5px;
+    float: left;
+    text-align: center;
+    background-color: rgba(66, 250, 250,0.3);
+    color: blueviolet;
+    font-weight: bold;
+
+}

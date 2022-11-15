@@ -1,0 +1,28 @@
+p{
+    color: rgba(230, 15, 15, 0.842);
+    font-weight: bold;
+    
+}
+p:hover{
+    color: chocolate;
+    background-color: rgb(169, 180, 69);
+}
+h2{
+    font-size: 20px;
+    color: rgb(10, 153, 153);
+    background-color: rgb(87, 28, 110);
+
+    
+}
+#abc{
+    color: rgb(78, 90, 67);
+
+}
+
+.bg_color_red{
+    background-color: rgb(77, 142, 145);
+}
+
+#abc:hover{
+    color: rgb(168, 228, 228);
+}
