@@ -1,0 +1,24 @@
+div{
+    
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    border: 2px solid rgb(219, 21, 21) ;
+    border-radius: 15px;
+    float: left;
+    overflow: hidden ;
+
+    outline-style:  solid;
+    outline-color: rgb(243, 157, 45);
+    outline-width: 10px;
+    padding: 15px;
+   
+
+}
+
+#div2{
+    /* display: none; */
+
+    visibility: hidden;
+}
+

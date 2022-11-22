@@ -1,5 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
 /* General */
 html{ 
+  
   height: 100%;
 }
 
@@ -171,6 +176,7 @@ ol li {
   padding-right: 8px;
   background: #2D2D2D;
   border-top: 1px solid #3D3D3D;
+  
 } 
 
 ul#menu
@@ -185,7 +191,7 @@ ul#menu li
 
 ul#menu li a
 { 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dancing Script', cursive;
   display: block; 
   float: left; 
   height: 20px;
