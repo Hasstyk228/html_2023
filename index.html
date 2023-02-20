@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #050210;
+        }
+
+        #div_0 {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+            filter: contrast(1.2);
+        }
+
+        #div_1 {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            border-radius: 100%;
+            background: radial-gradient(at top left, #fb5dad, #55fb9f, #b97aff);
+            position: absolute;
+            left: 100px;
+            animation-name: my-animation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+        }
+
+        #div_2 {
+            width: 180px;
+            height: 180px;
+            background-color: #050210;
+            margin: 209px 10px;
+            position: absolute;
+            left: 100px;
+            border-radius: 100%;
+        }
+
+        .glow::after {
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            background: radial-gradient(at top left, #fb5dad, #55fb9f, #b97aff);
+            filter: blur(20px);
+        }
+        .pulsation:after,
+        .pulsation:before{
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            content: '';
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            background-color: #1a0a61;
+            filter:opacity(30%);
+            
+        }
+        .pulsation:before{
+            animation: my_animation_2 2s reverse infinite; 
+        }
+        .pulsation:after{
+            animation: my_animation_2 2s 0.5s reverse infinite; 
+        }
+        @keyframes my-animation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes my_animation_2 {
+            0%{
+                width: 180px;
+                height: 180px;
+                
+            }
+
+            100%{
+                width: 20px;
+                height: 20px;
+                left: 80px;
+                top: 80px;
+                filter:opacity(40%);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="div_0">
+        <div id="div_1" class="glow"> </div>
+        <div id="div_2" class="pulsation"></div>
+    </div>
+</body>
+
+</html>
