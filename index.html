@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+            font-family: sans-serif;
+            font-size: 12px;
+
+        }
+
+        #div_1 {
+            max-width: 800px;
+            width: 90%;
+            margin: 0px auto;
+            
+        }
+
+        #grid1 {
+            display: grid;
+            max-width: 800px;
+            width: 90%;
+            margin: 0px auto;
+            grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-items: center;
+
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            #grid1 {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            #grid1 {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 500px;
+            }
+
+        }
+        @media screen and (max-width: 1024px) {
+            #p_1{
+            margin-left: 50px;
+            justify-items: center;
+        }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            #grid1 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #grid1 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .div_prime {
+            background-color: rgb(123, 165, 243);
+            width: 100px;
+            height: 90px;
+            display: grid;
+            border-radius: 8px;
+            text-align: center;
+            align-items: end;
+            box-shadow: 1px 1px 3px 0.1px;
+            background-image: url("img/placeholder-image.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 0px;
+            background-size: 120px;
+
+        }
+
+        .div_sec {
+            background-color: rgb(255, 255, 255);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            padding: 1px;
+            height: 16px;
+        }
+
+        #div_sec2 {
+            padding: 15px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        #p_1{
+            padding: 40px;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div_1">
+        <div id="div_sec2">
+            Gallery Heading
+        </div>
+        <div id="grid1">
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+            <div class="div_prime">
+                <div class="div_sec">
+                    Image Title
+                </div>
+            </div>
+
+        </div>
+        <div id="p_1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius eum corporis, eveniet ea non
+                necessitatibus
+                dolor sint repellendus doloribus recusandae repudiandae, quia eligendi vero ut reiciendis animi maxime
+                delectus
+                consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime est doloremque
+                architecto ipsum,
+                aliquam nihil in dolore, tenetur cumque quibusdam alias non quos minus sapiente veniam natus impedit id.
+                Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Eligendi iusto, ad natus aliquam aspernatur alias nihil molestiae
+                porro
+                exercitationem velit
+                veniam, distinctio saepe dolores esse quis placeat facere et quo!
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
